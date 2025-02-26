@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="png" href="logo.png" />
+    <title>hhsnaalinktree</title>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        window.onload = function () {
+          Swal.fire({
+            title: "knock knock, who is there??",
+            input: "text",
+            inputPlaceholder: "please enter ur 🎀pretty🎀 name here",
+            showCancelButton: false,
+            confirmButtonText: "send",
+            customClass: {
+              input: "input",
+              inputPlaceholder: "input-place",
+              confirmButton: "confirm-btn",
+              popup: "custom-popup-class",
+            },
+            inputValidator: (value) => {
+              if (!value) {
+                return "nama tidak boleh kosong!";
+              }
+            },
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Hello " + result.value + ",",
+                text: "welcome to hhsnaapage~",
+                imageUrl: "jungkook.gif",
+                imageWidth: 200,
+                imageAlt: "custom-image ",
+                confirmButtonText: "okkei",
+                customClass: {
+                  title: "custom-title",
+                  text: "custom-text",
+                  confirmButton: "confirm-btn",
+                  popup: "custom-popup-classes",
+                  image:
+                    "swal2-image animate__animated animate__pulse animate__infinite",
+                },
+              });
+            }
+          });
+        };
+      </script>
+      <!-- header -->
+      <div class="header animate__animated animate__fadeIn">
+        <img
+          src="profile.jpg"
+          alt="error image"
+          class="animate__animated animate__pulse animate__infinite"
+        />
+        <p>follow me to get know more!</p>
+      </div>
+
+      <!-- link button -->
+      <div class="link animate__animated animate__bounceIn">
+        <a href="https://instagram.com/hsna_hn" target="_blank"
+          >instagram account</a
+        >
+        <a href="https://instagram.com/7192.97" target="_blank"
+          >art account instagram</a
+        >
+        <a href="https://instagram.com/ot7bbngtan" target="_blank"
+          >fan account instagram</a
+        >
+        <a href="https://www.tiktok.com/@7192.97" target="_blank"
+          >tiktok account</a
+        >
+        <a
+          href="https://open.spotify.com/user/31bnylqsupg7vsbzvsy45kyxg76q?si=1429a967543a4461"
+          target="_blank"
+          >spotify account</a
+        >
+        <a href="https://wa.me/081515347912" target="_blank">whatsapp</a>
+        <a href="https://x.com/ot7bbngtan" target="_blank">X account</a>
+      </div>
+      <!-- footer -->
+      <div class="footer animate__animated animate__fadeIn">
+        <img src="logo.png" alt="error image" />
+        <p style="text-align: left">
+          let's be friend with <br />
+          jungkoOkie's gf 💖🌷
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
